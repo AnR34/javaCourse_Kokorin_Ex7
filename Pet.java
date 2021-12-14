@@ -1,33 +1,28 @@
+class Pet {
 
-    @Override
-    public void voice() {
-        System.out.println("Gaf");
+    protected void voice() {
     }
 
-    public Dog(String game, String ownerName) {
-        this.game = game;
-        this.ownerName = ownerName;
+    public Pet(int age, String name, boolean haveTale) {
+        this.age = age;
+        this.name = name;
+        this.haveTale = haveTale;
     }
 
-    public Dog(int numberOfTeeth, String game, String ownerName) {
-        this.numberOfTeeth = numberOfTeeth;
-        this.game = game;
-        this.ownerName = ownerName;
+    private int age;
+
+    public String name;
+
+    protected boolean haveTale;
+
+    public int getAge() {
+        return age;
     }
 
-    protected int numberOfTeeth;
-
-    public String game;
-
-    private String ownerName;
-
-    public String getOwnerName() {
-        return ownerName;
+    public void setAge(int age) {
+        this.age = age;
     }
 
-    public void setOwnerName(String ownerName) {
-        this.ownerName = ownerName;
+    public Pet() {
     }
-
-    public Dog() {
-    }
+}
